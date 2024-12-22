@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+ 
+    <h1 id="temperature"></h1>
+<p id="demo1"></p>
+<b id="result"></b>
+<i id="result3"></i>
+<h2 id="result">Result: </h2>
+
+<input type="number" id="num1" placeholder="Enter first number">
+<input type="number" id="num2" placeholder="Enter second number">
+<br><br>
+
+
+<button onclick="calculate('+')">+</button>
+<button onclick="calculate('-')">-</button>
+<button onclick="calculate('*')">*</button>
+<button onclick="calculate('/')">/</button>
+<button onclick="calculate('%')">%</button>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label for="celsius">Celsius: </label>
+    <input type="number" id="celsius" placeholder="Enter Celsius">
+    <button onclick="convertToFahrenheit()">Convert to Fahrenheit</button>
+
+    <label for="fahrenheit">Fahrenheit: </label>
+    <input type="number" id="fahrenheit" placeholder="Enter Fahrenheit">
+    <button onclick="convertToCelsius()">Convert to Celsius</button>
+
+
+    <script>
+      console.log("Welcome to JavaScript!");
+
+let num3 = + prompt("Enter your name");
+let city = prompt("Enter your age");
+
+
+
+
+      let temperature = 25;
+temperature = 30;
+console.log(temperature);
+
+
+      let sum = 12 + 8;
+console.log("Sum: " + sum);
+let division = 50 / 5;
+console.log("Division: " + division);
+let remainder = 17 % 4;
+console.log("Remainder: " + remainder);
+
+
+let greeting = "Hello, World!";
+let isCodingFun = true;
+console.log(greeting);
+console.log(isCodingFun);
+
+
+function sayHello(name) {
+            console.log("Hello, " + name + "!");
+        }
+        sayHello("Alice");  
+        sayHello("Lol");    
+
+
+
+        function multiply(a1, b1) {
+            return a1 * b1;
+        }
+      let result = multiply(4, 5);  
+        console.log(result); 
+         result = multiply(2, 10);  
+        console.log(result);  
+     
+
+
+        let width = 7;
+        let height = 10;
+        let area = width * height; 
+        console.log("Area of the rectangle: " + area);  
+        let number = 6;
+        let square = number * number; 
+        console.log("Square of " + number + ": " + square);  
+
+
+        let score = 0;
+        score += 10;
+        score -= 5;
+        console.log("Final score: " + score);
+
+    
+
+        let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            
+
+           
+            if (operator === '+') {
+                result = num1 + num2;
+            } else if (operator === '-') {
+                result = num1 - num2;
+            } else if (operator === '*') {
+                result = num1 * num2;
+            } else if (operator === '/') {
+                if (num2 === 0) {
+                    result = "Error: Cannot divide by zero";
+                } else {
+                    result = num1 / num2;
+                }
+            } else if (operator === '%') {
+                result = num1 % num2;
+            }
+        
+    </script>
+</body>
+</html>
